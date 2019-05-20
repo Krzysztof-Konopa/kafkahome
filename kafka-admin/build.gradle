@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.exercise.kafkahome'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    //dependencies
+    springBootVersion = '2.0.4.RELEASE'
+    springVersion =  '5.0.8.RELEASE'
+    junitVersion = '4.12'
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    compile "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+    compile "org.springframework:spring-web:${springVersion}"
+    testCompile "junit:junit:${junitVersion}"
+}

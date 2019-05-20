@@ -1,0 +1,4 @@
+rootProject.name = 'kafkahome'
+include 'kafka-admin'
+include 'kafka-client'
+
